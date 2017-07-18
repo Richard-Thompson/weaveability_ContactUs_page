@@ -1,0 +1,22 @@
+body {
+  padding: 1em;
+  width:100%;
+  max-width:1400px;
+  margin:0 auto;
+}
+
+.columns{
+  margin: 0;
+}
+.columns:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.columns:last-child {
+    margin-bottom: 0;
+}
+
+.column{
+  display: flex;
+  align-items: center;
+}
