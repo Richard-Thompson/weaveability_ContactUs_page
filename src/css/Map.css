@@ -1,0 +1,16 @@
+#map {
+  height: 315px;
+  width: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBEBEB;
+  border: 2px solid #FF6600;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#map img {
+  width: 400px;
+  height: 300px;
+}

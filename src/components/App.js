@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import TopNav from './TopNav';
 import BottomNav from './BottomNav';
+import TopBanner from './TopBanner';
+import Map from './Map';
 
 class App extends Component {
   render () {
@@ -9,6 +11,8 @@ class App extends Component {
       <div>
       <TopNav />
       <BottomNav />
+      <TopBanner />
+      <Map />
       </div>
     );
   }
