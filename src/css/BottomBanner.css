@@ -1,0 +1,43 @@
+#hero-image-bottom {
+  background-image: url('../../public/images/banner-bottom.png');
+  height: 225px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#goodbye {
+  height: 175px;
+  border: 5px solid #FF6600;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#in-touch{
+  margin-left:20px;
+}
+
+#in-touch strong {
+  font-size: 20pt !important;
+}
+
+#thankyou{
+  margin-left:20px;
+}
+
+#thankyou strong {
+  font-size: 30pt !important;
+}
+
+@media only screen and (max-width:382px) {
+  #goodbye {
+    width: 100%;
+  }
+}
