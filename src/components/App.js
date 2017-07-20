@@ -7,6 +7,7 @@ import Map from './Map';
 import Form from './Form';
 import CommunicationCard from './CommunicationCard';
 import BottomBanner from './BottomBanner';
+import Footer from './Footer';
 
 import '../css/MainSection.css';
 
@@ -36,6 +37,7 @@ class App extends Component {
             path={'images/button-icon-livechat.png'}/>
         </div>
         <BottomBanner />
+        <Footer />
       </div>
     );
   }

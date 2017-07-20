@@ -1,0 +1,22 @@
+footer{
+  background-color: #363636;
+  height: 100px;
+  margin:0 auto;
+  display: flex;
+  text-align: center;
+}
+
+footer div{
+  width:90%;
+  height:50px;
+  margin:0 auto;
+  border-bottom: 1px solid white;
+  display: inline-flex;
+  justify-content: center;
+}
+
+footer div p{
+  font-size:8pt;
+  color:white;
+  margin:20px 2%;
+}
