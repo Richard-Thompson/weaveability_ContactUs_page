@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import '../css/TopBanner.css';
 
 class TopBanner extends Component {
-  render() {
+  render () {
     return (
       <div>
         <div id="hero-image-top">
