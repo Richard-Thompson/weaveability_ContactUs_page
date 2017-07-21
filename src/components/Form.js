@@ -3,6 +3,11 @@ import Modal from './Modal';
 import '../css/Form.css';
 
 class Form extends Component {
+
+  ComponentDidMount () {
+    this.validationEmailMessage();
+  }
+
   constructor (props) {
     super(props);
 
@@ -30,9 +35,21 @@ class Form extends Component {
             </div>
             <div>
               <p>Email</p>
-              <input type="email" onChange={this.handleEmailChange} value={this.state.email} required/>
+              <input  id="email" 
+                      type="email" 
+                      onInvalid={function (event) {
+                        event.target.setCustomValidity('Please enter a valid email address.');
+                      }}                
+                      pattern='^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$'
+                      onChange={this.handleEmailChange} 
+                      value={this.state.email}
+                      required
+                      />
               <p>Confirm Email</p>
-              <input type="email" onChange={this.handleConfirmEmailChange} value={this.state.confirmEmail} required/> 
+              <input type="email"
+                     onChange={this.handleConfirmEmailChange} 
+                     value={this.state.confirmEmail} 
+                     required/> 
             </div>
           </div>
           <div id="date-of-birth">
@@ -51,6 +68,7 @@ class Form extends Component {
     );
   }
   handleEmailChange (event) {
+    event.target.setCustomValidity('');
     this.setState({
       email: event.target.value
     });
