@@ -2,9 +2,14 @@
   justify-content: center;
   padding:0 !important;
   border-right:2px solid black;
+  color:black;
   margin:15px 0;
   text-align: center;
   white-space: nowrap;
+}
+.tab strong:hover{
+  text-decoration: underline;
+  color: #FF6600;
 }
 .tab:last-child{
   border-right: none;
@@ -53,9 +58,4 @@
 
 .hamburger-tab:hover {
   background-color: #EBEBEB;
-}
-@media only screen and (max-width:768px) {
-  .nav{
-    flex-direction: column;
-  }
 }

@@ -51,6 +51,7 @@ form div p {
 
 #submit-button{ 
   margin: 10px 10px !important; 
+  border-radius: 10px;
   width:150px;
   height:40px;
   color:white;
