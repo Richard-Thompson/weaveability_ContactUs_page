@@ -8,6 +8,7 @@ class Map extends Component {
         <div id="map" className="is-hidden-mobile is-hidden-tablet-only">
             <img src="images/map-holder.png" />
         </div>
+        
     );
   }
 }
