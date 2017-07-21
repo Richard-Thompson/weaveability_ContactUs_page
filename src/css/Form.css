@@ -32,7 +32,7 @@ flex-direction: column;
 
 input{
   height:30px;
-  width:200px;
+  width:300px;
   border-radius: 5px;
   border:1px solid black;
   margin: 10px !important;
@@ -59,7 +59,7 @@ form div p {
   cursor: pointer;
 }
 
-@media only screen and (max-width:465px) {
+@media only screen and (max-width:533px) {
   form div p {
     text-align: center;
   }
@@ -69,4 +69,15 @@ form div p {
     justify-content: center;
     align-items: center;
   }
+}
+
+@media only screen and (max-width:465px) {
+  input{
+    width:100%;
+    margin:0 auto !important;
+  }
+  #date{
+    width:200px;
+  }
+ 
 }
