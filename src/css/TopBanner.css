@@ -44,7 +44,9 @@ strong {
   color: black;
   width: 80%;
   font-size: 25pt;
-  margin: 0 auto;
+  margin:0 auto;
+  margin-top:20px;
+  text-align: center;
   text-align: center;
 }
 

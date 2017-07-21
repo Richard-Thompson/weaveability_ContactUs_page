@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Modal from './Modal';
 import '../css/Form.css';
 
 class Form extends Component {
@@ -6,7 +7,7 @@ class Form extends Component {
     super(props);
 
     this.state = {
-      modalDisplay:false,
+      formCompletionModalDisplay:false,
       email:'',
       confirmEmail:''
     };
@@ -19,7 +20,7 @@ class Form extends Component {
   render () {
     return (
       <div className="form-wrapper">
-        <form onSubmit={this.handleSubmit}>
+        <form id="contact-form" onSubmit={this.handleSubmit}>
           <div className="names-and-emails-wrapper">
             <div>
               <p>First Name</p>
@@ -40,15 +41,12 @@ class Form extends Component {
             <button id="submit-button" type="submit">Submit</button>
           </div>
         </form>
-        <div className={this.state.modalDisplay ? 'modal is-active' : 'modal'}>
-          <div className="modal-background"></div>
-          <div className="modal-content">
-            <div className="box">
-              <p> This is the modal content </p>
-            </div>
-          </div>
-          <button className="modal-close is-large" onClick={this.toggleModal}></button>
-        </div>
+        <Modal 
+        display={this.state.formCompletionModalDisplay}
+        title={'Submission Completed'}
+        toggleModal={this.toggleModal}
+        text={'It can take upto seven days to receive your brochure.'}
+        />
       </div>
     );
   }
@@ -64,23 +62,23 @@ class Form extends Component {
   }
   handleSubmit (event) {
     if (this.state.email !== this.state.confirmEmail) {
-      alert('please ensure both emails are the same');
+      alert('Please ensure both emails are the same.');
       event.preventDefault();
     }
     else {
       event.preventDefault();
+      document.getElementById('contact-form').reset();
       this.setState({
-        modalDisplay: !this.state.modalDisplay,
+        formCompletionModalDisplay: !this.state.formCompletionModalDisplay,
         email:'',
         confirmEmail:''
       });
-      document.getElementById('contact-form').reset();
       
     }
   }
   toggleModal () {
     this.setState({
-      modalDisplay: !this.state.modalDisplay
+      formCompletionModalDisplay: !this.state.formCompletionModalDisplay
     });
   }
 
