@@ -6,8 +6,8 @@ class BottomBanner extends Component {
     return (
       <div id="hero-image-bottom">
         <div id="goodbye">
-          <p id="in-touch"><strong>For more information....</strong></p>
-          <p id="thankyou"> <strong>Contact Us</strong></p>
+          <p id="in-touch"><strong>We will be in touch</strong></p>
+          <p id="thankyou"> <strong>Thankyou</strong></p>
         </div>
       </div>
     );
