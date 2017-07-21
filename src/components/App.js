@@ -30,11 +30,11 @@ class App extends Component {
           <CommunicationCard 
             text={'Start a Skype Call with one of our Sales Team'}
             action={'Start'}
-            path={'images/button-icon-livechat.png'}/>
+            path={'images/button-icon-skype.png'}/>
           <CommunicationCard
             text={'Send an email to our Customer Services Team'}
             action={'send'}
-            path={'images/button-icon-livechat.png'}/>
+            path={'images/button-icon-email.png'}/>
         </div>
         <BottomBanner />
         <Footer />
