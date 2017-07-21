@@ -3,10 +3,11 @@ body {
   width:100%;
   max-width:1400px;
   margin:0 auto;
+  overflow: hidden;
 }
 
 body * {
-  font-size:13pt;
+  font-size:15pt;
 }
 
 .columns{

@@ -1,0 +1,73 @@
+.form-wrapper{
+  border: 2px solid #FF6600;
+  border-radius:10px;
+  min-height:315px;
+  min-width: 280px;
+  margin:20px;
+  background-color:#EBEBEB;
+  max-width: 580px;
+  height:auto;
+}
+
+form{
+  display: flex;
+  flex-direction:column !important; 
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.names-and-emails-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.names{
+flex-direction: column;
+}
+.emails{
+flex-direction: column;
+}
+
+input{
+  height:30px;
+  width:200px;
+  border-radius: 5px;
+  border:1px solid black;
+  margin: 10px !important;
+}
+
+form div p {
+  margin:10px;
+  color: black;
+}
+#date-of-birth{
+  left:10px;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#submit-button{ 
+  margin: 10px 10px !important; 
+  width:150px;
+  height:40px;
+  color:white;
+  background-color: #3ADC04;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+@media only screen and (max-width:465px) {
+  form div p {
+    text-align: center;
+  }
+  #date-of-birth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
