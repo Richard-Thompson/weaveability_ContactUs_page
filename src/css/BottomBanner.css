@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  margin-top:20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
